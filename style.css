@@ -1,0 +1,458 @@
+/* =========================
+   BASIC SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    background: #111;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 18px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 26px;
+}
+
+.navbar h1 span,
+footer span {
+    color: #e63946;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #e63946;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+
+    padding: 40px 20px;
+}
+
+.small-title {
+    color: #e63946;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 65px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* BUTTON */
+
+.button {
+    display: inline-block;
+
+    background: #e63946;
+    color: white;
+
+    padding: 14px 28px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-10px);
+    background: #c92f3b;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.section {
+    max-width: 1100px;
+    margin: auto;
+
+    padding: 80px 20px;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.section-text {
+    text-align: center;
+    margin: 15px 0 40px;
+    color: #666;
+}
+
+
+/* =========================
+   PROGRAM CARDS
+========================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    background: white;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    background: #111;
+    color: white;
+
+    padding: 80px 20px;
+}
+
+.about-content {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    color: #ccc;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.features div {
+    margin-bottom: 25px;
+}
+
+.features span {
+    color: #e63946;
+    font-size: 25px;
+}
+
+.features h3 {
+    margin: 8px 0;
+}
+
+.features p {
+    color: #aaa;
+}
+
+
+/* =========================
+   PRICING
+========================= */
+
+.pricing {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.price-card {
+    background: white;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    position: relative;
+}
+
+.price-card h3 {
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 40px;
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+.price span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #777;
+}
+
+.price-card p {
+    margin: 12px;
+    color: #555;
+}
+
+.price-button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 12px 22px;
+
+    background: #111;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+.price-button:hover {
+    background: #e63946;
+}
+
+.popular {
+    border: 3px solid #e63946;
+}
+
+.popular-text {
+    position: absolute;
+
+    top: -15px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #e63946;
+    color: white;
+
+    padding: 7px 15px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    border-radius: 20px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    background: #e63946;
+    color: white;
+
+    text-align: center;
+
+    padding: 80px 20px;
+}
+
+.contact h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    margin-bottom: 25px;
+}
+
+.contact .button {
+    background: white;
+    color: #e63946;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #111;
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+.copyright {
+    margin-top: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero h2 {
+        font-size: 42px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-text h2 {
+        font-size: 35px;
+    }
+
+    .pricing {
+        grid-template-columns: 1fr;
+    }
+
+    .contact h2 {
+        font-size: 30px;
+    }
+}
